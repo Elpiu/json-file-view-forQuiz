@@ -1,0 +1,12 @@
+{
+    "domanda": "",
+    "possibiliRisp": [
+    "",
+     "", 
+     "", 
+     ""],
+    "risposta": ""
+    },
+
+
+Domanda 4 da fare

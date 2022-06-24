@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <title>Bootstrap demo</title>
+  </head>
+
+  <body class="bg-container-body text-center">
+    <h1 class="text-bg-secondary rounded-5 p-2 m-5">Domande Sicurezza</h1>
+
+    <div id="contentQuiz" class="d-flex flex-column p-3 m-2"></div>
+
+    <script>
+      $(document).ready(function (e) {
+        $("head").load("./components/head/head.html");
+        setTimeout(function () {
+          doFetch();
+        }, 300);
+      });
+    </script>
+  </body>
+</html>

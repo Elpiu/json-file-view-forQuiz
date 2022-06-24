@@ -1,0 +1,34 @@
+{
+  "mainData": [
+    {
+      "domanda": "Indicare quale tra le seguenti motivazioni è corretta. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "L’autenticazione a due fattori richiede necessariamente la presenza di una device con one-time password.",
+        "L’autenticazione a due fattori richiede necessariamente la presenza di un cellulare per ricevere messaggi.",
+        "L’autenticazione a due fattori richiede necessariamente la presenza di autenticazioni scelte tra fattori diversi (qualcosa che si sa, qualcosa che si possiede, caratteristiche biometriche).",
+        "L’autenticazione a due fattori richiede necessariamente la presenza di due diverse autenticazioni."
+      ],
+      "risposta": "La risposta corretta è: L’autenticazione a due fattori richiede necessariamente la presenza di autenticazioni scelte tra fattori diversi (qualcosa che si sa, qualcosa che si possiede, caratteristiche biometriche)."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è corretta relativamente alla Forward Secrecy. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "La sicurezza dei messaggi cifrati passati non dipende dalla compromissione futura della chiave privata.",
+        "Fornisce una maggiore sicurezza poiché garantisce anche l’anonimato del mittente.      ",
+        "La sicurezza dei messaggi cifrati vale anche per il futuro, poiché resistenti a tutti gli attacchi.",
+        "La confidenzialità dei messaggi cifrati permane anche inoltrandoli ad altri.      "
+      ],
+      "risposta": "La risposta corretta è: La sicurezza dei messaggi cifrati passati non dipende dalla compromissione futura della chiave privata."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è sbagliata. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "L’analisi dinamica può portare alla diffusione del malware su altri sistemi mediante la rete.",
+        "L’analisi dinamica è tipicamente effettuata utilizzando una modalità di rete chiamata “air-gapped”.",
+        "L’analisi dinamica è sempre indipendente dall’analisi statica.",
+        "L’analisi dinamica può portare all’infezione del sistema su cui il malware viene eseguito, oltre che dei dati in esso contenuti."
+      ],
+      "risposta": "La risposta corretta è: L’analisi dinamica è sempre indipendente dall’analisi statica."
+    }
+  ]
+}
