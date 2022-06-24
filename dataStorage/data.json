@@ -29,6 +29,176 @@
         "L’analisi dinamica può portare all’infezione del sistema su cui il malware viene eseguito, oltre che dei dati in esso contenuti."
       ],
       "risposta": "La risposta corretta è: L’analisi dinamica è sempre indipendente dall’analisi statica."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è corretta. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "I cifrari a chiave pubblica sono utili perché risolvono il problema della condivisione di chiavi simmetriche.",
+        "I cifrari a chiave pubblica sono utili perché hanno una sicurezza maggiore rispetto ad AES, avendo chiavi di lunghezza maggiore di 256 bit.",
+        "I cifrari a chiave pubblica sono utili perché rendono necessari i certificati digitali ed evitano l’anonimia",
+        "I cifrari a chiave pubblica sono utili perché si basano su problemi computazionali impossibili da risolvere efficientemente."
+      ],
+      "risposta": "La risposta corretta è: I cifrari a chiave pubblica sono utili perché risolvono il problema della condivisione di chiavi simmetriche."
+    },
+    {
+      "domanda": "Si assuma che dhparams1.pem contenga i parametri pubblici Diffie-Hellman p1 e g1. Si assuma inoltre che dhparams2.pem d contenga i parametri pubblici Diffie-Hellman p2 e g2. Siano Utente1 e Utente2 due utenti. Indicare quale tra le seguenti affermazioni è sbagliata. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Sia Utente1 che Utente2 devono usare dhparams1.pem, per generare ciascuno la propria coppia di chiavi.",
+        "Sia Utente1 che Utente2 devono usare dhparams2.pem, per generare ciascuno la propria coppia di chiavi.",
+        "Per derivare la propria coppia di chiavi, Utente2 deve usare dhparams2.pem, mentre Utente1 deve usare dhparams1.pem, rispettivamente.",
+        "Nessuna delle altre tre scelte."
+      ],
+      "risposta": "La risposta corretta è: Per derivare la propria coppia di chiavi, Utente2 deve usare dhparams2.pem, mentre Utente1 deve usare dhparams1.pem, rispettivamente."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è sbagliata. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "L’AES non è un cifrario di Feistel.",
+        "È possibile utilizzare chiavi di 128, 192, o 256 per l’AES e la lunghezza del blocco è 128 bit.",
+        "Non sono chiari i criteri costruttivi delle S-box per l’AES.",
+        "Tutte le operazioni usate dall’AES sono facilmente ed efficientemente implementabili sia su architetture ad 8 bit che a 32 bit."
+      ],
+      "risposta": "La risposta corretta è: Non sono chiari i criteri costruttivi delle S-box per l’AES."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è sbagliata. È possibile effettuare una sola scelta: Scegli un'alternativa:",
+      "possibiliRisp": [
+        "Il Record Protocol si occupa di garantire la compressione, la confidenzialità e l’integrità dei dati.",
+        "Il Record Protocol utilizza gli algoritmi ed i parametri crittografici negoziati attraverso l’Handshake Protocol.",
+        "Il Record Protocol si occupa di garantire l’autenticazione, la compressione, la confidenzialità e l’integrità dei dati.",
+        "Nessuna delle altre tre scelte."
+      ],
+      "risposta": "La risposta corretta è: Il Record Protocol si occupa di garantire l’autenticazione, la compressione, la confidenzialità e l’integrità dei dati."
+    },
+    {
+      "domanda": "Indicare quale tra i seguenti metodi è preferibile come generatore pseudocasuale (dal cui output ottenere dopo chiavi, challange, …). È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Utilizzare la stringa ottenuta concatenando seme, seme+1, seme+2, seme+3, …",
+        "Utilizzare la stringa ipod oppure ipad (usate nell’HMAC) come chiave per cifrare il seme, poi cifrare seme+1, poi cifrare seme+2, …",
+        "Utilizzare il seme come chiave per AES in counter mode.",
+        "Utilizzare la stringa concatenando X(1), X(2), X(3),… dove X(0)=seme e X(i)=A*X(i-1)+B mod C, ed A, B, C sono costanti."
+      ],
+      "risposta": "La risposta corretta è: Utilizzare il seme come chiave per AES in counter mode."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni descrive una corretta generazione dei parametri per la firma digitale RSA. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Input L. Generare 2 numeri primi p, q la cui somma delle lunghezza è L. Calcolare n=pq. Scegliere un e tale che gcd(e, (p-1)(q-1))=1.  Scegliere d come inverso moltiplicativo di e mod n. La chiave pubblica è (n,e) e la chiave privata è (n,d).",
+        "Input L. Generare 2 numeri primi p, q di lunghezza L/2. Calcolare n=pq. Scegliere un e tale che gcd(e, (p-1)(q-1))=1. Scegliere d come inverso moltiplicativo di e mod (p-1)(q-1). La chiave pubblica è (n,e) e la chiave privata è (n,d).",
+        "Input L. Generare 2 numeri primi p, q la cui somma delle lunghezza è L. Calcolare n=pq. Scegliere e = 2^16 - 1. Scegliere d come inverso moltiplicativo di e mod (p-1)(q-1). La chiave pubblica è (n,e) e la chiave privata è (n,d).",
+        "Input L. Generare 2 numeri primi p, q di lunghezza L/2. Calcolare n=pq. Scegliere e = 2^16 - 1. Scegliere d come inverso moltiplicativo di e mod n. La chiave pubblica è (n,e) e la chiave privata è (n,d)."
+      ],
+      "risposta": "La risposta corretta è: Input L. Generare 2 numeri primi p, q di lunghezza L/2. Calcolare n=pq. Scegliere un e tale che gcd(e, (p-1)(q-1))=1. Scegliere d come inverso moltiplicativo di e mod (p-1)(q-1). La chiave pubblica è (n,e) e la chiave privata è (n,d)."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è sbagliata. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Il comando rand non può essere usato per generare stringhe di caratteri stampabili.",
+        "Il comando rand può utilizzare come seme un file arbitrario.",
+        "Il seme utilizzato dal comando rand può essere anche non specificato.",
+        "Il comando rand utilizza di default come seme i random bit forniti da /dev/urandom."
+      ],
+      "risposta": "La risposta corretta è: Il comando rand non può essere usato per generare stringhe di caratteri stampabili."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti motivazioni è corretta. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Il certificato che lega l’identità di Alice alla propria chiave pubblica ed emesso da una CA è firmato usando la chiave pubblica della CA.",
+        "Il certificato che lega l’identità di Alice alla propria chiave pubblica ed emesso da una CA è firmato usando la chiave privata della CA.",
+        "Il certificato che lega l’identità di Alice alla propria chiave pubblica ed emesso da una CA è firmato usando la chiave privata di Alice.",
+        "Il certificato che lega l’identità di Alice alla propria chiave pubblica ed emesso da una CA è firmato usando la chiave pubblica di Alice."
+      ],
+      "risposta": "La risposta corretta è: Il certificato che lega l’identità di Alice alla propria chiave pubblica ed emesso da una CA è firmato usando la chiave privata della CA."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è corretta. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Di solito la firma digitale è concatenata all’hash di un file.",
+        "Di solito la firma digitale è apposta sull’hash di un file.",
+        "Di solito la firma digitale è ricavata a partire dall’hash di un file.",
+        "Nessuna delle altre tre scelte."
+      ],
+      "risposta": "La risposta corretta è: Di solito la firma digitale è apposta sull’hash di un file."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti motivazioni è corretta. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Le funzioni hash SHA-256, SHA-392, SHA-512, raccomandate dal NIST, si basano sull’intrattabilità del logaritmo discreto.",
+        "L’output delle funzioni hash SHA-256, SHA-384, SHA-512 sono 256 bit, 384 bit e 512 bit, rispettivamente.",
+        "SHA1 è la più diffusa tra le funzione hash e non sono noti problemi di sicurezza ad oggi.",
+        "Le funzioni hash SHA-256, SHA-392, SHA-512, raccomandate dal NIST, si basano sull’intrattabilità della fattorizzazione."
+      ],
+      "risposta": "La risposta corretta è: L’output delle funzioni hash SHA-256, SHA-384, SHA-512 sono 256 bit, 384 bit e 512 bit, rispettivamente."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è corretta. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "I cifrari a sostituzione monoalfabetica sono stati facilmente decifrati usando le raccomandazioni del NIST.",
+        "I cifrari a sostituzione monoalfabetica sono stati facilmente decifrati usando semplicemente una ricerca esaustiva nello spazio delle chiavi.",
+        "I cifrari a sostituzione monoalfabetica sono stati facilmente decifrati usando principalmente una analisi delle frequenze delle lettere.",
+        "Nessuna delle altre tre scelte."
+      ],
+      "risposta": "La risposta corretta è: I cifrari a sostituzione monoalfabetica sono stati facilmente decifrati usando principalmente una analisi delle frequenze delle lettere."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è sbagliata. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "La caratteristica di permanenza stabilisce che una biometria non cambia nel tempo.",
+        "La caratteristica di permanenza stabilisce il grado di permanenza di una determinata biometria.",
+        "La caratteristica di permanenza può determinare la stabilità a breve o a lungo termine di un sistema biometrico.",
+        "La caratteristica di permanenza caratterizza il tempo di permanenza necessario all’acquisizione di una determinata biometria."
+      ],
+      "risposta": "La risposta corretta è: La caratteristica di permanenza caratterizza il tempo di permanenza necessario all’acquisizione di una determinata biometria."
+    },
+    {
+      "domanda": "Si assuma che Alice abbia generato una coppia di chiavi RSA (memorizzata in rsaprivatekey.pem), e voglia mandare a Bob la propria chiave pubblica. Indicare quale tra i seguenti comandi consente ad Alice di estrarre la propria chiave pubblica, a partire dalla coppia di chiavi generata in precedenza. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "openssl rsa -pubin -in rsaprivatekey.pem -pubout -out rsapublickey.pem",
+        "openssl rsa -in rsaprivatekey.pem -pubout -out rsapublickey.pem",
+        "openssl rsa -in rsaprivatekey.pem -out rsapublickey.pem",
+        "Nessuna delle altre tre scel"
+      ],
+      "risposta": "La risposta corretta è: openssl rsa -in rsaprivatekey.pem -pubout -out rsapublickey.pem"
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è corretta. È possibile effettuare una sola scelta. L’i-esima iterazione nel DES è data da",
+      "possibiliRisp": [
+        "L_i = R_(i-1)    ed    R_i = R_(i-1) XOR f(L_(i-1), K_i).",
+        "L_i = R_(i-1)    ed    R_i = f(L_(i-1) XOR R_(i-1), K_i).",
+        "L_i = R_(i-1)     ed     R_i = L_(i-1) XOR f(R_(i-1), K_i).",
+        "L_i = L_(i-1)    ed    R_i = R_(i-1) XOR f(L_(i-1), K_i)."
+      ],
+      "risposta": "La risposta corretta è: L_i = R_(i-1)     ed     R_i = L_(i-1) XOR f(R_(i-1), K_i)."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è corretta. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Senza l’utilizzo di una CRL l’unica entità a conoscenza della revoca di un determinato certificato è la CA che ha effettuato la revoca.",
+        "Senza l’utilizzo di una CRL le uniche entità a conoscenza della revoca di un determinato certificato sono gli utenti i cui certificati sono stati rilasciati dalla stessa CA che ha effettuato la revoca.",
+        "Senza l’utilizzo di una CRL l’unica entità a conoscenza della revoca di un determinato certificato è la CA di livello superiore rispetto a quella che ha effettuato la revoca.",
+        "Nessuna delle altre tre scelte."
+      ],
+      "risposta": "La risposta corretta è: Senza l’utilizzo di una CRL l’unica entità a conoscenza della revoca di un determinato certificato è la CA che ha effettuato la revoca."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è sbagliata. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "Il comando dgst ed il comando cmp possono essere usati per verificare se due file portano ad una collisione.",
+        "Il comando dgst può essere usato per calcolare lo SHA256 di un file.",
+        "Il comando dgst può essere usato in alternativa al comando hmac per calcolare l’HMAC di un file.",
+        "Il comando dgst può essere usato per calcolare l’MD5 di più file."
+      ],
+      "risposta": "La risposta corretta è: Il comando dgst può essere usato in alternativa al comando hmac per calcolare l’HMAC di un file."
+    },
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è sbagliata. È possibile effettuare una sola scelta:",
+      "possibiliRisp": [
+        "La codifica in Base64 non consente di processare dati il cui numero di bit non sia multiplo di 24.",
+        "La codifica in Base64 consente di memorizzare o trasferire flussi arbitrari di bit mediante caratteri stampabili.",
+        "La codifica in Base64 processa i dati in blocchi da 24 bit.",
+        "La codifica in Base64 opera su blocchi di dati da 6 bit."
+      ],
+      "risposta": "La risposta corretta è: La codifica in Base64 non consente di processare dati il cui numero di bit non sia multiplo di 24."
     }
   ]
 }
