@@ -1,1 +1,1 @@
-<?php include_once("./SicurezzaQuiz/index.html"); ?>
+<?php include_once("./index.html"); ?>
