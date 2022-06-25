@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <title>Bootstrap demo</title>
+    <title>Quiz</title>
   </head>
 
   <body class="bg-container-body text-center">
     <h1 class="text-bg-secondary rounded-5 p-2 m-5">Domande Sicurezza</h1>
+    <div class="m-5 h3">
+      <div
+        class="btn-group-toggle bg-info rounded-pill m-4 "
+        data-toggle="buttons"
+      >
+        <label class="btn-primary m-2 p-2 ">
+          <input class="checkbox-scale" type="checkbox" id="shuffleQuiz" />&nbsp&nbsp&nbspShuffle Quiz   
+          <br>
+          <br>
+          <input class="checkbox-scale" type="checkbox" id="shuffleRisposte" />&nbsp&nbsp&nbspShuffle Risposte
+          
+        </label>
+      </div>
+
+
 
     <div id="contentQuiz" class="d-flex flex-column p-3 m-2"></div>
 

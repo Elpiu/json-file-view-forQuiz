@@ -1,4 +1,17 @@
-console.log("ciao");
+let dataStore = null;
+let shuffeQuiz = null;
+let shuffeRisposte = null;
+
+$("#shuffleQuiz").change(function () {
+  shuffeQuiz = this.checked;
+  creaQuiz(dataStore.mainData, shuffeQuiz, shuffeRisposte);
+});
+
+$("#shuffleRisposte").change(function () {
+  shuffeRisposte = this.checked;
+  creaQuiz(dataStore.mainData, shuffeQuiz, shuffeRisposte);
+});
+
 function doFetch() {
   // Replace ./data.json with your JSON feed
   fetch("./dataStorage/data.json")
@@ -7,22 +20,29 @@ function doFetch() {
     })
     .then((data) => {
       // Work with JSON data here
-      $("#contentQuiz").html(creaQuiz(data.mainData));
+      dataStore = data;
+
+      creaQuiz(data.mainData, shuffeQuiz, shuffeRisposte);
     })
     .catch((err) => {
       // Do something for an error here
     });
 }
 
-function creaQuiz(dataJson) {
-  let strVal = "";
-  dataJson.forEach((element) => {
-    strVal += creaDomanda(element);
-  });
-  return strVal;
+function shuffleArray(data) {
+  data.sort(() => Math.random() - 0.5);
 }
 
-function creaDomanda(data) {
+function creaQuiz(dataJson, quizzShuffle, answerShuffle) {
+  let strVal = "";
+  if (quizzShuffle) shuffleArray(dataJson);
+  dataJson.forEach((element) => {
+    strVal += creaDomanda(element, answerShuffle);
+  });
+  $("#contentQuiz").html(strVal);
+}
+
+function creaDomanda(data, answerShuffle) {
   var strVar = "";
   strVar += '<div class="bg-warning fancy-border-radius">';
   strVar += "<div>";
@@ -30,6 +50,7 @@ function creaDomanda(data) {
   //Intestazione
   strVar += creaIntestazione(data.domanda);
   //Opzioni
+  if (answerShuffle) shuffleArray(data.possibiliRisp);
   data.possibiliRisp.forEach((element) => {
     strVar += creaOpzione(element);
   });
