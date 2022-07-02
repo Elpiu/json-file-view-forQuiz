@@ -1,6 +1,359 @@
 {
   "mainData": [
     {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "La sicurezza della firma RSA e della firma DSS si basano entrambi sulla difficoltà di calcolare logaritmi discreti",
+        "La sicurezza della firma RSA si basa sulla difficoltà di fattorizzare e la sicurezza del DSS sulla difficoltà di calcolare logaritmi discreti ",
+        "La sicurezza della firma RSA e della firma DSS si basano entrambi sulla difficoltà di fattorizzare",
+        ""
+      ],
+      "risposta": "La sicurezza della firma RSA si basa sulla difficoltà di fattorizzare e la sicurezza del DSS sulla difficoltà di calcolare logaritmi discreti"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "A partire da una chiave pubblica RSA a 1024 bit è facile recuperare la relativa chiave privata",
+        "A partire da una chiave pubblica RSA a 1024 bit è molto difficile recuperare la relativa chiave privata ",
+        "A partire da una chiave pubblica RSA 1024 bit è impossibile recuperare la relativa chiave privata",
+        ""
+      ],
+      "risposta": "A partire da una chiave pubblica RSA a 1024 bit è molto difficile recuperare la relativa chiave privata"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "L’algoritmo di decifratura del DES è uguale a quello di cifratura, incluso l’ordine delle sotto chiavi",
+        "L’algoritmo di decifratura del DES è uguale a quello di cifratura, ma l’ordine delle sotto chiavi deve essere invertito e bisogna in aggiunta scambiare la metà destra finale con la metà sinistra",
+        "L’algoritmo di decifratura del DES è uguale a quello di cifratura, incluso l’ordine delle sotto chiavi, ma bisogna in aggiunta scambiare la metà destra finale con la metà sinistra",
+        "L’algoritmo di decifratura del DES è uguale a quello di cifratura, ma l’ordine delle sotto chiavi deve essere invertito"
+      ],
+      "risposta": "L’algoritmo di decifratura del DES è uguale a quello di cifratura, ma l’ordine delle sotto chiavi deve essere invertito"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "È possibile effettuare il “resume” di una sessione a patto che il Client e Server abbiano memorizzato i parametri di sessione ",
+        "È possibile effettuare il “resume” di una sessione mediante lo scambio di opportune chiavi",
+        "È possibile effettuare il “resume” di una sessione mediante generatori pseudo-casuali",
+        ""
+      ],
+      "risposta": "È possibile effettuare il “resume” di una sessione a patto che il Client e Server abbiano memorizzato i parametri di sessione"
+    },
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Una Time Stamping Authority (TSA) può essere parte di una PKI ",
+        "Una Time Stamping Authority (TSA) è usata da una CA per verificare la scadenza di un certificato",
+        "Una Time Stamping Authority (TSA) è usata da un utente per verificare la scadenza di un certificato",
+        ""
+      ],
+      "risposta": "Una Time Stamping Authority (TSA) può essere parte di una PKI "
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Se al comando dgst viene passato più di un file, viene calcolato l’hash della concatenazione dei file",
+        "Se al comando dgst viene passato più di un file, viene restituita in output la concatenazione dell’hash dei file",
+        "Se al comando dgst viene passato più di un file, viene restituito in output un messaggio di errore",
+        "Se al comando dgst viene passato più di un file, viene calcolato un hash separato per ciascun file"
+      ],
+      "risposta": "Se al comando dgst viene passato più di un file, viene calcolato un hash separato per ciascun file"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Una Key Derivation Function (KDF) consente di derivare la componente pubblica da una coppia di chiavi asimmetriche",
+        "Una Key Derivation Function (KDF) consente di derivare una chiave pseudocasuale a partire da eventi che avvengono nel sistema",
+        "Una Key Derivation Function (KDF) consente di derivare una chiave di cifratura a partire da una PassPhrase ",
+        ""
+      ],
+      "risposta": "Una Key Derivation Function (KDF) consente di derivare una chiave di cifratura a partire da una PassPhrase"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "I certificati sono importanti nel Code Signing per garantire i diritti di autore",
+        "I certificati sono importanti nel Code Signing per garantire la mancanza di codice malevolo",
+        "I certificati sono importanti nel Code Signing per garantire integrità e provenienza del codice ",
+        "I certificati sono importanti nel Code Signing per garantire la qualità del codice e la versione dell’aggiornamento"
+      ],
+      "risposta": "I certificati sono importanti nel Code Signing per garantire integrità e provenienza del codice "
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Il Record Protocol consente di ottenere la mutua autenticazione tra le parti",
+        "Il Record Protocol si occupa della segnalazione di situazioni anomale",
+        "I parametri negoziati tramite il Record Protocol sono utilizzati dall’Handshake Protocol",
+        "Nessuna delle precedenti"
+      ],
+      "risposta": "Nessuna delle precedenti"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Una ciphersuite definisce uno schema per l’accordo/scambio di chiavi, uno schema per l’autenticazione, uno schema per la cifratura simmetrica ed uno schema per l’autenticazione del messaggio",
+        "Una ciphersuite definisce uno schema per l’accordo/scambio di chiavi ed uno schema per la cifratura simmetrica",
+        "Una ciphersuite definisce uno schema per l’accordo/scambio di chiavi, uno schema per l’autenticazione, uno schema per cifratura simmetrica, uno schema per l’autenticazione del messaggio ed uno schema per la generazione di numeri pseudocasuali",
+        "Una ciphersuite definisce uno schema per l’accordo/scambio di chiavi, uno schema per l’autenticazione, uno schema per la cifratura simmetrica, ma non uno schema per l’autenticazione del messaggio "
+      ],
+      "risposta": "Una ciphersuite definisce uno schema per l’accordo/scambio di chiavi, uno schema per l’autenticazione, uno schema per la cifratura simmetrica ed uno schema per l’autenticazione del messaggio"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "La Certificate Revocation List (CRL) contiene il numero seriale di tutti i certificati revocati ",
+        "La Certificate Revocation List (CRL) contiene tutti i certificati con lunghezza della chiave non conforme alle raccomandazioni NIST",
+        "La Certificate Revocation List (CRL) contiene tutti i certificati revocati e scaduti",
+        "La Certificate Revocation List (CRL) contiene chiave pubblica e numero seriale di tutti i certificati revocati e scaduti"
+      ],
+      "risposta": "La Certificate Revocation List (CRL) contiene il numero seriale di tutti i certificati revocati"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta [+2]:",
+      "possibiliRisp": [
+        "La firma grafometrica, essendo un caso particolare della firma digitale ha la medesima efficacia probatoria della scrittura privata",
+        "La firma grafometrica è essenzialemnte un’immagine della firma autografa, senza altri rilevanti dati per la non falsificabilità.",
+        "La firma grafometrica, al pari della firma digitale, ha la medesima efficacia probatoria della scrittura privata",
+        ""
+      ],
+      "risposta": "La firma grafometrica, al pari della firma digitale, ha la medesima efficacia probatoria della scrittura privata"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Due certificati emessi dalla stessa CA possono avere numeri di serie differenti",
+        "Due certificati emessi dalla stessa CA devono sempre avere numeri di serie differenti",
+        "Due certificati emessi dalla stessa CA devono sempre avere numeri di serie uguali",
+        ""
+      ],
+      "risposta": "Due certificati emessi dalla stessa CA devono sempre avere numeri di serie differenti"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "La cifratura di un messaggio viene sempre fatta con una singola esponenziazione modulare. La grandezza di un messaggio non è un problema poiché l’operazione viene eseguita in aritmetica modulare.",
+        "RSA viene usata per cifrare il messaggio purché sia meno grande del modulo, altrimenti si divide il messaggio in blocchi di grandezza opportuna e si cifra ogni singolo blocco con RSA.",
+        "Il modulo di RSA viene scelto molto grande, proprio per cifrare messaggi molto grandi. Quindi RSA non può essere usata per messaggi di grandezza maggiore del modulo.",
+        "RSA viene usata per cifrare una chiave scelta casualmente che poi verrà usata per cifrare il messaggio mediante un cifrario simmetrico. "
+      ],
+      "risposta": "RSA viene usata per cifrare una chiave scelta casualmente che poi verrà usata per cifrare il messaggio mediante un cifrario simmetrico. "
+    },
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Il paradosso del compleanno è utile perché per la sicurezza di tutti è necessario evitare assembramenti e feste nel periodo emergenziale.",
+        "Il paradosso del compleanno è utile per analizzare il tempo necessario per trovare la chiave privata per il DES",
+        "Il paradosso del compleanno è utile per analizzare la difficoltà di invertire le funzioni hash",
+        "Il paradosso del compleanno è utile per analizzare la probabilità di successo di trovare collisioni nelle funzioni hash"
+      ],
+      "risposta": "Il paradosso del compleanno è utile per analizzare la probabilità di successo di trovare collisioni nelle funzioni hash"
+    },
+
+    {
+      "domanda": "Indicare quale tra le seguenti comandi non consente ad Alice di generare una coppia di chiavi RSA:",
+      "possibiliRisp": [
+        "Openssl genrsa -pubout -out rsaprivatekey.pem -passout pass:XXX -aes128 1024",
+        "Openssl genrsa -out rsaprivatekey.pem -passout pass:XXX -aes128 1024",
+        "Openssl genrsa -out rsaprivatekey.pem -aes128 1024",
+        "Openssl genrsa -out rsaprivatekey.pem -aes128"
+      ],
+      "risposta": "Openssl genrsa -pubout -out rsaprivatekey.pem -passout pass:XXX -aes128 1024"
+    },
+    {
+      "domanda": "Siano rsaprivatekey.pem ed rsapublickey.pem rispettivamente le chiavi pubbliche e private di Alice. Indicare quale tra i seguenti comandi consente ad Alice di calcolare una firma per il file testiInChiaro.txt:",
+      "possibiliRisp": [
+        "Openssl rsault -sign -pubin -inkey rsapublickey.pem -in testoInchiaro.txt -out rsasign.bin",
+        "Openssl rsault -sign -inkey rsapublickey.pem -in testoInchiaro.txt -pubout -out rsasign.bin",
+        "Nessuna delle precedenti",
+        ""
+      ],
+      "risposta": "Nessuna delle precedenti"
+    },
+    {
+      "domanda": "Siano rsaprivatekey.pem ed rsapublickey.pem rispettivamente le chiavi private e pubbliche di Bob. Indicare quale tra i seguenti comandi consente ad Alice di cifrare un messaggio per Bob:",
+      "possibiliRisp": [
+        "Openssl rsault -enctypt -pubin -inkey rsapublickey.pem -in testoInchiaro.txt -out testoCifrato.txt ]",
+        "Openssl rsault -enctypt -inkey rsapublickey.pem -in testoInchiaro.txt -out testoCifrato.txt",
+        "Openssl rsault -enctypt -inkey rsapublickey.pem -in testoInchiaro.txt -pubout -out testoCifrato.txt",
+        ""
+      ],
+      "risposta": "Openssl rsault -enctypt -pubin -inkey rsapublickey.pem -in testoInchiaro.txt -out testoCifrato.txt"
+    },
+    {
+      "domanda": "Indicare quale tra i seguenti comandi consente di generare una stringa pseudocasuale la cui lunghezza sia multipla di 4:",
+      "possibiliRisp": [
+        "Nessuna delle precedenti ",
+        "Openssl rand -base64 12",
+        "Openssl rand -base64 32",
+        "Openssl rand -base64 19"
+      ],
+      "risposta": "Nessuna delle precedenti"
+    },
+    {
+      "domanda": "Siano rsaprivatekey.pem ed rsapublickey.pem rispettivamente le chiavi private e pubbliche di Alcie. Indicare quale tra i seguenti comandi consente ad Alice di calcolare una firma per l’hash SHA-256 per il file testoInChiaro.txt:",
+      "possibiliRisp": [
+        "Openssl sa256 -sign rsaprivatekey.pem -out rsasign.bin testoInchiaro.txt",
+        "Openssl sa256 -sign rsaprivatekey.pem -pubout -out rsasign.bin testoInchiaro.txt",
+        "Openssl sa256 -sign -pubin rsaprivatekey.pem -out rsasign.bin testoInchiaro.txt",
+        ""
+      ],
+      "risposta": "Openssl sa256 -sign rsaprivatekey.pem -out rsasign.bin testoInchiaro.txt"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "SSL/TLS consentono di ottenere i requisiti di autenticazione, confidenzialità ed integrità",
+        "SSL/TLS consentono alle parti di negoziare le primitive crittografiche da utilizzare per la sicurezza dell’informazioni",
+        "SSL/TSL consente al Client di autenticare il Server, ed eventualmente anche al Server di autenticare il Client",
+        "Nessuna delle precedenti"
+      ],
+      "risposta": "Nessuna delle precedenti"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "L’Handshake Protocol consente alle parti di negoziare le primitive crittografiche necessarie per la sicurezza della comunicazione",
+        "L’Handshake Protocol consente alle parti di negoziare i parametri necessari per la sicurezza della comunicazione",
+        "L’Handshake Protocol non consente alle parti di autenticarsi",
+        "L’Handshake Protocol consente alle parti di negoziare la versione del protocollo SSL/TSL da utilizzare"
+      ],
+      "risposta": "L’Handshake Protocol non consente alle parti di autenticarsi"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "L’Handshake Protocol garantisce alle parti l’interoperabilità tra le diverse implementazioni del protocollo SSL/TSL",
+        "L’Handshake Protocol è utilizzato per imporre alle parti l’esecuzione di un nuovo handshake",
+        "L’Handshake Protocol consente alle parti di negoziare una ciphersuite",
+        "L’Handshake Protocol consente al Server di autenticare il Client"
+      ],
+      "risposta": "L’Handshake Protocol è utilizzato per imporre alle parti l’esecuzione di un nuovo handshake"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata [+2]:",
+      "possibiliRisp": [
+        "Le S-box del DES furono progettate per resistere all’attacco noto poi come Crittoanalisi Differenziale",
+        "Il DES è stato abbandonato come standard a causa del suo avalanche effect",
+        "Il DES è stato abbandonato come standard perché la chiave è troppo corta",
+        "Il DES può essere rotto in meno di una settimana con poche migliaia di euro o anche meno di un giorno"
+      ],
+      "risposta": "Il DES è stato abbandonato come standard a causa del suo avalanche effect"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "L’analisi dinamica consiste nell’esaminare un malware durante la sua esecuzione",
+        "L’analisi dinamica viene di solito effettuata dopo quella statica",
+        "L’analisi dinamica può portare all’infezione del sistema su cui essa viene effettuata",
+        "Nessuna delle precedenti"
+      ],
+      "risposta": "Nessuna delle precedenti"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "L’analisi statica viene di solito effettuata dopo quella dinamica",
+        "L’analisi statica consente di effettuare l’analisi del codice e della struttura di un malware",
+        "Durante l’analisi statica il malware non viene eseguito",
+        ""
+      ],
+      "risposta": "L’analisi statica viene di solito effettuata dopo quella dinamica"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "La fase di replicazione e propagazione è tipica della maggior parte dei software malevoli",
+        "La fase di replicazione e propagazione è tipicamente condotta dal malware al verificarsi di determinati eventi o condizioni",
+        "Tutti i software malevoli presentano obbiettivi di replicazione e propagazione",
+        ""
+      ],
+      "risposta": "Tutti i software malevoli presentano obbiettivi di replicazione e propagazione"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "L’identificazione/autenticazione è un processo iterativo",
+        "Il processo di Identificazione/autenticazione avviene dopo il processo di Enrollment",
+        "Il processo di Identificazione/autenticazione avviene prima del processo di Enrollment",
+        "Il processo di Identificazione/autenticazione si basa su un template matcher"
+      ],
+      "risposta": "Il processo di Identificazione/autenticazione avviene prima del processo di Enrollment"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "I sistemi biometrici consentono l’identificazione e l’autenticazione di un utente",
+        "I sistemi biometrici possono essere basati su caratteristiche fisiologiche o comportamentali",
+        "I sistemi biometrici sono tipicamente utilizzati per il controllo degli accessi in sedi governative",
+        "Nessuna delle altre tre scelte"
+      ],
+      "risposta": "Nessuna delle altre tre scelte"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "L’identificazione basata su sistemi biometrici si occupa di effettuare il matching “uno a molti” e matching 'uno a pochi'",
+        "L’identificazione basata su sistemi biometrici può operare sia su soggetti cooperativi che su soggetti non cooperativi",
+        "L’identificazione basata su sistemi biometrici cerca una corrispondenza all’interno di un database di modelli",
+        "Nessuna delle precedenti"
+      ],
+      "risposta": "Nessuna delle precedenti"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "Una CRL contiene i numeri seriali di tutti i certificati che sono stati revocati",
+        "Una CRL è emessa periodicamente da una CA per rendere noti i certificati che sono stati revocati",
+        "Una CRL non contiene i numeri seriali di tutti i certificati che sono scaduti",
+        "Nessuna delle precedenti"
+      ],
+      "risposta": "Nessuna delle precedenti"
+    },
+    {
+      "domanda": "Scegli l’affermazione sbagliata:",
+      "possibiliRisp": [
+        "Il calcolo della Timestamp Request è basato sull’utilizzo di funzioni hash",
+        "Il calcolo della Timestamp Response è basato sull’utilizzo di funzioni hash e firme digitali",
+        "Il Timestamp Response include un timestamp",
+        "Nessuna delle precedenti"
+      ],
+      "risposta": "Nessuna delle precedenti"
+    },
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Le macchine a rotori sono state inventate da Alan Turing per rompere Enigma",
+        "Enigma usava 3 rotori ed un disco per l’involuzione",
+        "Ogni rotore Enigma realizza una sostituzione polialfabetica",
+        ""
+      ],
+      "risposta": "Enigma usava 3 rotori ed un disco per l’involuzione"
+    },
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Il cifrario one-time pad è impossibile da rompere",
+        "È possibile rompere il cifrario one-time pad se la chiave non è lunga",
+        "Non si sa se esiste un algoritmo efficiente che rompe il cifrario one-time pad",
+        ""
+      ],
+      "risposta": "Il cifrario one-time pad è impossibile da rompere"
+    },
+    {
       "domanda": "Indicare quale tra le seguenti motivazioni è corretta. È possibile effettuare una sola scelta:",
       "possibiliRisp": [
         "L’autenticazione a due fattori richiede necessariamente la presenza di una device con one-time password.",
@@ -199,6 +552,89 @@
         "La codifica in Base64 opera su blocchi di dati da 6 bit."
       ],
       "risposta": "La risposta corretta è: La codifica in Base64 non consente di processare dati il cui numero di bit non sia multiplo di 24."
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Nel ciclo di vita di un malware le fasi seguono il seguente ordine: Infezione, Quiescenza, Replicazione e Propagazione, Azioni Malevole.",
+        "",
+        "",
+        ""
+      ],
+      "risposta": "Nel ciclo di vita di un malware le fasi seguono il seguente ordine: Infezione, Quiescenza, Replicazione e Propagazione, Azioni Malevole."
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Le caratteristiche di un sistema biometrico sono: Universalità, Unicità, Permanenza e Catturabilità",
+        "",
+        "",
+        ""
+      ],
+      "risposta": "Le caratteristiche di un sistema biometrico sono: Universalità, Unicità, Permanenza e Catturabilità"
+    },
+
+    {
+      "domanda": "Indicare quale tra le seguenti affermazioni è corretta data una chiave pubblica RSA (n, e) con chiave privata (n, d):",
+      "possibiliRisp": [
+        "La cifratura del messaggio M è data da C = M^e mod n e la decifratura da M = C^d mod n",
+        "",
+        "",
+        ""
+      ],
+      "risposta": "La cifratura del messaggio M è data da C = M^e mod n e la decifratura da M = C^d mod n"
+    },
+
+    {
+      "domanda": "Indicare quale tra le seguenti descrizioni è corretta relativamente all’accordo su chiavi Diffie-Hellman, dato un numero primo p e un generatore g [+2].",
+      "possibiliRisp": [
+        "Alice genera a caso x ed invia g^x mod p. Bob genera a caso y ed invia g^y mod p. La chiave condivisa è g^(xy) mod p.",
+        "",
+        "",
+        ""
+      ],
+      "risposta": "Alice genera a caso x ed invia g^x mod p. Bob genera a caso y ed invia g^y mod p. La chiave condivisa è g^(xy) mod p."
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Assumendo che venga utilizzata la codifica in Base64, la stringa binaria (24bit) può essere codificata mediante 4 caratteri stampabili.",
+        "",
+        "",
+        ""
+      ],
+      "risposta": "Assumendo che venga utilizzata la codifica in Base64, la stringa binaria (24bit) può essere codificata mediante 4 caratteri stampabili."
+    },
+
+    {
+      "domanda": "Sia dhparams.pem il file contente i parametri pubblici Diffie-Hellman p e g. Sia dhkey1.pem la chiave privata di Alice e sia dhpub2.pem la chiave pubblica di Bob. Indicare quale tra i seguenti comandi consente ad alice di ottenere una chiave condivisa, a partire dalle informazioni ricevuto da Bob:",
+      "possibiliRisp": [
+        "Openssl pkeyutl -derive -inkey -dhkey1.pem -peerkey dhpub2.pem -out segreto1.bin",
+        "",
+        "",
+        ""
+      ],
+      "risposta": "Openssl pkeyutl -derive -inkey -dhkey1.pem -peerkey dhpub2.pem -out segreto1.bin"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": ["L’Enrollment è un processo iterativo", "", "", ""],
+      "risposta": "L’Enrollment è un processo iterativo"
+    },
+
+    {
+      "domanda": "Scegli l’affermazione corretta:",
+      "possibiliRisp": [
+        "Alcune modalità operative di cifratura sono: ECB, CBC, CFB, OFB, CTR",
+        "",
+        "",
+        ""
+      ],
+      "risposta": "Alcune modalità operative di cifratura sono: ECB, CBC, CFB, OFB, CTR"
     }
   ]
 }

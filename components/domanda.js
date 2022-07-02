@@ -23,6 +23,9 @@ function doFetch() {
       dataStore = data;
 
       creaQuiz(data.mainData, shuffeQuiz, shuffeRisposte);
+      var title = document.getElementById("title").innerHTML;
+      title += "    ,Totale Domande: " + data.mainData.length;
+      document.getElementById("title").innerHTML = title;
     })
     .catch((err) => {
       // Do something for an error here
@@ -75,6 +78,7 @@ function creaIntestazione(testoDomanda) {
 
 function creaOpzione(testoOpzione) {
   var strVar = "";
+  if (testoOpzione == "") return strVar;
   strVar += '  <p class="fs-4 m-2">';
   strVar += "@ " + testoOpzione;
   strVar += "  </p>";
