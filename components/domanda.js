@@ -24,7 +24,7 @@ function doFetch() {
 
       creaQuiz(data.mainData, shuffeQuiz, shuffeRisposte);
       var title = document.getElementById("title").innerHTML;
-      title += "    ,Totale Domande: " + data.mainData.length;
+      title += ", Totale Domande: " + data.mainData.length;
       document.getElementById("title").innerHTML = title;
     })
     .catch((err) => {
